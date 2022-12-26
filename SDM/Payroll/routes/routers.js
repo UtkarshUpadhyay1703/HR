@@ -12,7 +12,7 @@ var empschema = new schema({
     status:String
 })
 
-var Emp = mongoose.model("employee", empschema, "employee");
+var Emp = mongoose.model("employees", empschema, "employees");
 
 router.get("/", function (req, resp) {
     Emp.find().exec(function (err, data) {
